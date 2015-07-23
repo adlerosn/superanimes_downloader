@@ -1,0 +1,10 @@
+# CONFIG #
+wolfs-rain.txt
+wolfs-rain-pag-url.txt
+wolfs-rain-vid-fns.txt
+wolfs-rain-vid-url.txt
+*~
+# VIDEO #
+*.mp4
+Downloads/**
+IGNORE/**

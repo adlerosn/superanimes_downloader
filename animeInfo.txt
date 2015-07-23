@@ -1,0 +1,8 @@
+Page: http://www.superanimes.com/wolfs-rain
+site_prefix: /episodio-
+ep_first: 1
+ep_last_: 30
+out_file: wolfs-rain-episodio-
+ep_num_style: %d
+file_ext: .mp4
+aniname: wolfs-rain
