@@ -3,8 +3,15 @@ wolfs-rain.txt
 wolfs-rain-pag-url.txt
 wolfs-rain-vid-fns.txt
 wolfs-rain-vid-url.txt
+wolfs-rain.txt~
+wolfs-rain-pag-url.txt~
+wolfs-rain-vid-fns.txt~
+wolfs-rain-vid-url.txt~
 *~
+.*~
+.gitignore~
 # VIDEO #
 *.mp4
 Downloads/**
+# OTHER #
 IGNORE/**
