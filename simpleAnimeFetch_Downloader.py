@@ -58,7 +58,7 @@ def downloadToFileContinuing(url,fn):
 def downloadLists(urlLst,fnLst):
     assert len(urlLst)==len(fnLst)
     for i in range(len(urlLst)):
-        print('\n\n'+'#'*80+'\n\n'+'Downloadind video %03d of %03d:\n')
+        print('\n\n'+'#'*80+'\n\n'+'Downloadind video %03d of %03d:\n'%(i+1,len(urlLst)))
         sys.stdout.flush()
         downloadToFileContinuing(urlLst[i],fnLst[i])
     print('\n\n'+'#'*80+'\n\n')
