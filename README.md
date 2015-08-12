@@ -43,6 +43,9 @@ The file extension:<br/>
 And the anime name for the temporary files:<br/>
 `aniname: wolfs-rain`<br/>
 
+The last one, the player to be used:<br/>
+`player: ?player=sa2`<br/>
+
 So, it's just a matter of customization of a file.
 
 <br/>
@@ -56,6 +59,7 @@ So, it's just a matter of customization of a file.
 `ep_num_style: %d`<br/>
 `file_ext: .mp4`<br/>
 `aniname: wolfs-rain`<br/>
+`player: ?player=sa2`<br/>
 
 But this one is also valid (and confusing):<br/>
 `: http://www.superanimes.com/wolfs-rain`<br/>
@@ -66,6 +70,7 @@ But this one is also valid (and confusing):<br/>
 `: %d`<br/>
 `: .mp4`<br/>
 `: wolfs-rain`<br/>
+`: ?player=sa2`<br/>
 
 
 ###Model for writing an `animeInfo.txt` file:
@@ -76,7 +81,8 @@ But this one is also valid (and confusing):<br/>
 `out_file: `<br/>
 `ep_num_style: %d`<br/>
 `file_ext: .mp4`<br/>
-`aniname: `
+`aniname: `<br/>
+`player: `
 
 
 ##How to run
