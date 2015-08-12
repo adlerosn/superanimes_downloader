@@ -1,8 +1,9 @@
-Page: http://www.superanimes.com/wolfs-rain
+Page: http://www.superanimes.com/ookami-to-koushinryou-ii
 site_prefix: /episodio-
 ep_first: 1
-ep_last_: 30
-out_file: wolfs-rain-episodio-
+ep_last_: 12
+out_file: ookami-to-koushinryou-II-episodio-
 ep_num_style: %d
 file_ext: .mp4
-aniname: wolfs-rain
+aniname: ookami-to-koushinryou-II
+player: ?player=sa

@@ -13,6 +13,8 @@ from os import popen as system
 
 animeinfofilelocation='animeInfo.txt'
 
+wgetUserAgent='Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:39.0) Gecko/20100101 Firefox/39.0'
+
 def parseInfo(string):
     l=[k.split(': ')[1] for k in string.strip().strip('\n').strip().split('\n')]
     l[2]=int(l[2])
@@ -41,17 +43,17 @@ def runbkg(cmd):
     return system('bash -c "'+cmd+'"')
 
 def download(url):
-    run('wget '+url+' -O tmpfile.tmp')
+    run('wget -U \''+wgetUserAgent+'\' '+url+' -O tmpfile.tmp')
     a=readAllFile('tmpfile.tmp')
     run('rm tmpfile.tmp')
     return a
 
 def downloadToFile(url,fn):
-    run('wget '+url+' -O '+fn)
+    run('wget -U \''+wgetUserAgent+'\' '+url+' -O '+fn)
     
 def downloadToFileContinuing(url,fn):
     if isfile(fn):
-        run('wget '+url+' -c -O '+fn)
+        run('wget -U \''+wgetUserAgent+'\' '+url+' -c -O '+fn)
     else:
         downloadToFile(url,fn)
 

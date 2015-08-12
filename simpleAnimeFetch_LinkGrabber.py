@@ -12,9 +12,11 @@ from time import sleep as timedpause
 
 animeinfofilelocation='animeInfo.txt'
 
+wgetUserAgent='Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:39.0) Gecko/20100101 Firefox/39.0'
+
 def urlAssembler(infoParsed):
     base=''.join(infoParsed[0]+infoParsed[1]+infoParsed[5])
-    return [base%k for k in range(infoParsed[2],infoParsed[3]+1)]
+    return [(base%k)+infoParsed[8] for k in range(infoParsed[2],infoParsed[3]+1)]
 
 def fileNameAssembler(infoParsed):
     base=''.join(infoParsed[4]+infoParsed[5])
@@ -46,7 +48,7 @@ def runbkg(cmd):
 
 def download(url):
     tpause=3
-    run('wget '+url+' -O tmpfile.tmp')
+    run('wget -U \''+wgetUserAgent+'\' '+url+' -O tmpfile.tmp')
     a=readAllFile('tmpfile.tmp')
     run('rm tmpfile.tmp')
     print("\nPlease wait %.2f seconds to avoid flooding the server...\n\n\n"%(tpause)+'#'*80+'\n')
